@@ -123,10 +123,11 @@ STATIC_URL = '/static/'
 
 # AWS settings 
 
-AWS_ACCESS_KEY_ID = 'AKI************'       # アクセスキーID
-AWS_SECRET_ACCESS_KEY = '*************'     # シークレットアクセスキー
+AWS_ACCESS_KEY_ID = 'AKI****************'       # アクセスキーID
+AWS_SECRET_ACCESS_KEY = '*********************************'     # シークレットアクセスキー
+
 
 # Email settings
 
 EMAIL_BACKEND = 'django_ses.SESBackend'
-DEFAULT_FROM_EMAIL = SERVER_EMAIL = '齋藤飛鳥 <asuka@nogi.com>' #送信元のメールアドレスとユーザ名
+DEFAULT_FROM_EMAIL = SERVER_EMAIL = '******* <******@*******>' #送信元のメールアドレスとユーザ名
