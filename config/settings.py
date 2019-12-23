@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_ses',
 ]
 
 MIDDLEWARE = [
@@ -118,3 +119,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+# AWS settings 
+
+AWS_ACCESS_KEY_ID = 'AKI************'       # アクセスキーID
+AWS_SECRET_ACCESS_KEY = '*************'     # シークレットアクセスキー
+
+# Email settings
+
+EMAIL_BACKEND = 'django_ses.SESBackend'
+DEFAULT_FROM_EMAIL = SERVER_EMAIL = '齋藤飛鳥 <asuka@nogi.com>' #送信元のメールアドレスとユーザ名
